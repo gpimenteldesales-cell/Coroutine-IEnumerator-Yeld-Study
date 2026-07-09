@@ -532,7 +532,7 @@ GameObject:
   - component: {fileID: 1259779776}
   - component: {fileID: 1259779775}
   - component: {fileID: 1259779779}
-  - component: {fileID: 1259779777}
+  - component: {fileID: 1259779780}
   m_Layer: 0
   m_Name: Pogo
   m_TagString: Player
@@ -614,38 +614,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1259779777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259779774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed61b6bb33711524597ead16f3fb30b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Coroutine
-  clickControl:
-    m_Name: Click Control
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: b6ba9521-17c5-43ea-b299-87f4d6603a4f
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: e588884b-f3ab-4fff-bc99-d47ddf0715fb
-      m_Path: <Mouse>/leftButton
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Click Control
-      m_Flags: 0
-    m_Flags: 0
-  textObject: {fileID: 1419976009}
-  textTexto: {fileID: 1396661665}
-  scoreTime: 0
 --- !u!61 &1259779779
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -692,6 +660,55 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 32.7, y: 50.005352}
   m_EdgeRadius: 0
+--- !u!114 &1259779780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259779774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed61b6bb33711524597ead16f3fb30b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoroutineTest
+  keysControl:
+    m_Name: Keys Control
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: de30938b-cea1-41f0-b702-d6b1d41774c1
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: a5c99674-dede-4dfd-a0a7-2dcffd87b7d1
+      m_Path: <Keyboard>/x
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Keys Control
+      m_Flags: 0
+    m_Flags: 0
+  clickControl:
+    m_Name: Click Control
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: f5236d96-ca51-45a2-9b30-dc503ae17750
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 2b5d8178-ba22-4516-969d-672089e5581f
+      m_Path: <Mouse>/leftButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Click Control
+      m_Flags: 0
+    m_Flags: 0
+  textObject: {fileID: 1419976009}
+  textTexto: {fileID: 1396661665}
+  scoreTime: 0
 --- !u!1 &1396661663
 GameObject:
   m_ObjectHideFlags: 0
