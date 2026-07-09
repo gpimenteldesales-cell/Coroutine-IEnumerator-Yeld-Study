@@ -35,5 +35,6 @@ public class Coroutine : MonoBehaviour
     {
         scoreTime++;
         textTexto.text = "Clicks:" + scoreTime.ToString();
+        spritePlayer.color = Color.red;
     }
 }
